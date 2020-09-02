@@ -3,7 +3,6 @@
 @inject IHttpContextAccessor HttpContextAccessor
 @using ProjetoTempus.Extensions
 
-@model ProjetoTempus.Models.Service
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,7 +10,7 @@
 
 <div class="container backgroundWhite">
     <div class="card">
-        <div class="card-header bg-light text-light ml-0 row container">
+        @*<div class="card-header bg-light text-light ml-0 row container">
             <div class="col-12 col-md-6">
                 <h1 class="text-primary">@Model.Name</h1>
             </div>
@@ -68,6 +67,6 @@
                     
                 </div>
             </div>
-        </div>
+        </div>*@
     </div>
 </div>

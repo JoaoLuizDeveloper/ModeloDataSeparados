@@ -1,8 +1,7 @@
-﻿@model ProjetoTempus.Models.ViewModels.HomeVM
-
+﻿
 <h1>Lawn Service </h1>
 
-    @foreach (var item in Model.CategoryList.OrderBy(o=>o.DisplayOrder))
+    @*@foreach (var item in Model.CategoryList.OrderBy(o=>o.DisplayOrder))
     {
         if(Model.ServiceList.Where(c=>c.CategoryId == item.Id).Count() > 0)
         {
@@ -36,5 +35,5 @@
                 </div>
             </div>
         }
-    }
+    }*@
 

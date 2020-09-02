@@ -9,7 +9,6 @@ using Microsoft.Extensions.Logging;
 using ProjetoTempus.AccessData.Data.Repository.IRepository;
 using ProjetoTempus.Extensions;
 using ProjetoTempus.Models;
-using ProjetoTempus.Models.ViewModels;
 using ProjetoTempus.Utility;
 
 namespace ProjetoTempus.Controllers
@@ -18,7 +17,7 @@ namespace ProjetoTempus.Controllers
     public class HomeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        private HomeVM HomeVM;
+        //private HomeVM HomeVM;
 
         public HomeController(IUnitOfWork unitOfWork)
         {
@@ -27,41 +26,41 @@ namespace ProjetoTempus.Controllers
 
         public IActionResult Index()
         {
-            HomeVM = new HomeVM()
-            {
-                CategoryList = _unitOfWork.Category.GetAll(),
-                ServiceList = _unitOfWork.Service.GetAll(includeProperties:"Frequency")
-            };
+            //HomeVM = new HomeVM()
+            //{
+            //    CategoryList = _unitOfWork.Category.GetAll(),
+            //    ServiceList = _unitOfWork.Service.GetAll(includeProperties:"Frequency")
+            //};
 
-            return View(HomeVM);
+            return View();
         }
 
         public IActionResult Details(int id)
         {
-            var serviceFromDb = _unitOfWork.Service.GetFirstOrDefault(includeProperties: "Category,Frequency", filter: c => c.Id == id);
-            return View(serviceFromDb);
+            //var serviceFromDb = _unitOfWork.Cliente.GetFirstOrDefault(filter: c => c.Id == id);
+            return View();
         }
 
-        public IActionResult AddToCart(int serviceId)
-        {
-            List<int> sessionList = new List<int>();
-            if(string.IsNullOrEmpty(HttpContext.Session.GetString(SD.SessionCart)))
-            {
-                sessionList.Add(serviceId);
-                HttpContext.Session.Setobject(SD.SessionCart, sessionList);
-            }
-            else
-            {
-                sessionList = HttpContext.Session.Getobject<List<int>>(SD.SessionCart);
-                if(sessionList!= null && !sessionList.Contains(serviceId))
-                {
-                    sessionList.Add(serviceId);
-                    HttpContext.Session.Setobject(SD.SessionCart, sessionList);
-                }
-            }
+        //public IActionResult AddToCart(int serviceId)
+        //{
+        //    List<int> sessionList = new List<int>();
+        //    if(string.IsNullOrEmpty(HttpContext.Session.GetString(SD.SessionCart)))
+        //    {
+        //        sessionList.Add(serviceId);
+        //        HttpContext.Session.Setobject(SD.SessionCart, sessionList);
+        //    }
+        //    else
+        //    {
+        //        sessionList = HttpContext.Session.Getobject<List<int>>(SD.SessionCart);
+        //        if(sessionList!= null && !sessionList.Contains(serviceId))
+        //        {
+        //            sessionList.Add(serviceId);
+        //            HttpContext.Session.Setobject(SD.SessionCart, sessionList);
+        //        }
+        //    }
 
-            return RedirectToAction(nameof(Index));
-        }
+        //    return RedirectToAction(nameof(Index));
+        //}
 
         public IActionResult Privacy()
         {

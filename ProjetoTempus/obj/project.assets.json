@@ -3229,10 +3229,7 @@
         },
         "runtime": {
           "bin/placeholder/ProjetoTempus.AccessData.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "ProjetoTempus.Models/1.0.0": {
         "type": "project",
