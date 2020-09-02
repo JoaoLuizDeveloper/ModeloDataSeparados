@@ -1,0 +1,14 @@
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.AccessData.deps.json
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.AccessData.dll
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.AccessData.pdb
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.Models.dll
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.Utility.dll
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.Models.pdb
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\bin\Debug\netcoreapp3.1\ProjetoTempus.Utility.pdb
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.csprojAssemblyReference.cache
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.AssemblyInfoInputs.cache
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.AssemblyInfo.cs
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.csproj.CopyComplete
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.dll
+C:\Users\JuninhoDRZ\source\ProjetoTempus\ProjetoTempus\ProjetoTempus.AccessData\obj\Debug\netcoreapp3.1\ProjetoTempus.AccessData.pdb
