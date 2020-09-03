@@ -18,7 +18,7 @@
                     <label asp-for="Nome"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Nome" class="form-control" maxlength="150" required />
+                    <input asp-for="Nome" class="form-control" maxlength="150" />
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <label asp-for="CPF"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="CPF" class="form-control" maxlength="14" placeholder="___.___.___-__" required onblur="verificarCpf()" />
+                    <input asp-for="CPF" class="form-control" maxlength="14" placeholder="___.___.___-__" onblur="verificarCpf()" />
                     <span asp-validation-for="CPF" class="text-danger"></span>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <label asp-for="DataNascimento"></label>
                 </div>
                 <div class="col-8">
-                    <input type="date" asp-for="DataNascimento" class="form-control" value="" required />
+                    <input type="date" asp-for="DataNascimento" class="form-control" value="" />
                     <span asp-validation-for="DataNascimento" class="text-danger"></span>
                 </div>
             </div>

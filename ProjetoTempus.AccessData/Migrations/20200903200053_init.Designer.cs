@@ -10,8 +10,8 @@ using ProjetoTempus.DataAccess.Data;
 namespace ProjetoTempus.AccessData.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200903024755_ajustenoclienteToDb")]
-    partial class ajustenoclienteToDb
+    [Migration("20200903200053_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

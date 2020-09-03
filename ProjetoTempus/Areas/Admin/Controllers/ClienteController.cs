@@ -42,6 +42,12 @@ namespace ProjetoTempus.Areas.Admin.Controllers
                 cliente.RendaFamiliar = 0;
             }
 
+            if(cliente.DataNascimento > DateTime.Now)
+            {
+                ViewBag.Data = DateTime.Now.Date;
+                return View(cliente);
+            }
+
             if (ModelState.IsValid)
             {
                 cliente.DataCadastro = DateTime.Now;
