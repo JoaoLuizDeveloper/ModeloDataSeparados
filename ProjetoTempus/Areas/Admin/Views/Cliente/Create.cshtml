@@ -1,0 +1,131 @@
+﻿@model ProjetoTempus.Models.Cliente
+@{
+    ViewData["Title"] = "Adicionar Cliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 backgroundWhite border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+
+        <div class="col-8">
+            <h2> Adicionar Cliente</h2>
+            <br />
+            <br />
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Nome"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nome" class="form-control" maxlength="150" required />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="CPF"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="CPF" class="form-control" maxlength="14" placeholder="___.___.___-__" required onblur="verificarCpf()" />
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="DataNascimento"></label>
+                </div>
+                <div class="col-8">
+                    <input type="date" asp-for="DataNascimento" class="form-control" value="" required />
+                    <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="RendaFamiliar"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="RendaFamiliar" class="form-control" placeholder="R$: 0,00" />
+                    <span asp-validation-for="RendaFamiliar" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_CreateAndBackToListButton" model="Model.Id" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#CPF").mask("999.999.999-99");
+        });
+
+        function verificarCpf() {
+            var cpf = $("#CPF").val();
+
+            var strCPF = cpf.replace(".","");
+            strCPF = strCPF.replace(".","");
+            strCPF = strCPF.replace("-","");
+            var renda =  $("#RendaFamiliar").val();
+            var ver = TestaCPF(strCPF)
+
+            function TestaCPF(strCPF) {
+                var Soma;
+                var Resto;
+                Soma = 0;
+                if (strCPF == "00000000000") {
+                    alert("Por favor insira um CPF Valido");
+                    $("#CPF").val("");
+                    return false;
+                }
+
+                for (i = 1; i <= 9; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
+                Resto = (Soma * 10) % 11;
+
+                if ((Resto == 10) || (Resto == 11)) Resto = 0;
+                if (Resto != parseInt(strCPF.substring(9, 10))) {
+                    alert("Por favor insira um CPF Valido");
+                    $("#CPF").val("");
+                    return false;
+                }
+
+                Soma = 0;
+                for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
+                Resto = (Soma * 10) % 11;
+
+                if ((Resto == 10) || (Resto == 11)) Resto = 0;
+                if (Resto != parseInt(strCPF.substring(10, 11))) {
+                    alert("Por favor insira um CPF Valido");
+                    $("#CPF").val("");
+                    return false;
+                }
+                return true;
+            }
+
+        $.ajax({
+            url: '@Url.Action("SearchCpf", "Cliente")',
+            cache: false,
+            async: true,
+            type: "POST",
+            data: { id: cpf },
+            dataType: "json",
+            success: function (data) {
+                if (data.success == false) {
+                    toastr.error(data.message);
+                    $("#CPF").val("");
+                }
+            }
+        });
+    }
+
+    </script>
+}

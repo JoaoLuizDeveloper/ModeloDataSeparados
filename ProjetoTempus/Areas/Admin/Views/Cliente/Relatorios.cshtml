@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Relatorios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="card">
+        <div class="card-header bg-dark text-light ml-0 row container">
+            <div class="col-12 d-none d-md-block col-md-6 pb-1">
+            </div>
+            <div class="col-12 col-md-4 offset-md-2 text-right">
+                <a asp-action="Index" asp-controller="Cliente" asp-area="Admin" class="btn btn-outline-info form-control btn-sm">Voltar a Listagem</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="container rounded p-2">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pb-4">
+                        <div class="row">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-primary">Relatorios</span>
+                            </h4>
+                        </div>
+                        @if (ViewBag.Relatorio1 != null)
+                        {
+                            <div style="border: 2px solid black; border-radius: 10px; padding:10px">
+                                <div class="row my-1">
+                                    <div class="col-lg-9">
+                                        <label>Quantidade de Clientes maiores de 18 anos com Renda maior que a media:</label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input value="@ViewBag.Relatorio1" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                         }
+                        <br /><br />
+                        @if (ViewBag.Relatorio2 != null)
+                        {
+                            <div style="border: 2px solid black; border-radius: 10px; padding:10px">
+                                <div class="row my-1">
+                                    <div class="col-lg-9">
+                                        <label>Quantidade de Clientes Classe A:</label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input value="@ViewBag.Relatorio2[0]" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-lg-9">
+                                        <label>Quantidade de Clientes Classe B:</label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input value="@ViewBag.Relatorio2[1]" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-lg-9">
+                                        <label>Quantidade de Clientes Classe C:</label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input value="@ViewBag.Relatorio2[2]" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

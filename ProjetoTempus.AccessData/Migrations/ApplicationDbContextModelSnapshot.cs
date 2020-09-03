@@ -236,7 +236,7 @@ namespace ProjetoTempus.AccessData.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataNacimento")
+                    b.Property<DateTime>("DataNascimento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nome")
@@ -244,7 +244,7 @@ namespace ProjetoTempus.AccessData.Migrations
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
-                    b.Property<double>("RendaFamiliar")
+                    b.Property<double?>("RendaFamiliar")
                         .HasColumnType("float");
 
                     b.HasKey("Id");

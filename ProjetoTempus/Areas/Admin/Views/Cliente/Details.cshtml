@@ -1,0 +1,67 @@
+﻿@model ProjetoTempus.Models.Cliente
+@{
+    ViewData["Title"] = "Detalhes Cliente" + @Model.Nome;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header bg-dark text-light ml-0 row container">
+        <div class="col-12 d-none d-md-block col-md-6 pb-1">
+        </div>
+        <div class="col-12 col-md-4 offset-md-2 text-right">
+            <a asp-action="Index" asp-controller="Cliente" asp-area="Admin" class="btn btn-outline-info form-control btn-sm">Voltar a Listagem</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="container rounded p-2">
+            <div class="row">
+                <div class="col-12 col-lg-6 pb-4">
+                    <div class="row">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Detalhes Cliente @Model.Nome</span>
+                        </h4>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-3">
+                            <label>Nome</label>
+                        </div>
+                        <div class="col-9">
+                            <input asp-for="Nome" readonly id="TxtName" type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row my-1">
+                        <div class="col-3">
+                            <label>CPF</label>
+                        </div>
+                        <div class="col-9">
+                            <input asp-for="CPF" readonly id="TxtPhone" type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row my-1">
+                        <div class="col-3">
+                            <label>DataNascimento</label>
+                        </div>
+                        <div class="col-9">
+                            <input asp-for="DataNascimento" readonly type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    @if (Model.RendaFamiliar > 0)
+                    {
+                        <div class="row my-1">
+                            <div class="col-3">
+                                <label>Renda Familiar</label>
+                            </div>
+                            <div class="col-9">
+                                <input asp-for="RendaFamiliar" readonly type="text" class="form-control" />
+                            </div>
+                        </div>
+                    }
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

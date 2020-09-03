@@ -57,21 +57,27 @@ namespace ProjetoTempus.Areas.Identity.Pages.Account
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "A Senha {0} precisa conter {2} e no maximo {1} cararteres longos.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Senha")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Confirmar Senha")]
+            [Compare("Password", ErrorMessage = "A Senha e a confirmação não coincidem.")]
             public string ConfirmPassword { get; set; }
 
+            [Display(Name = "Nome")]
             public string Name { get; set; }
+            [Display(Name = "Endereço")]
             public string StreetAddress { get; set; }
+            [Display(Name = "Cidade")]
             public string City { get; set; }
+            [Display(Name = "Estado")]
             public string State { get; set; }
+            [Display(Name = "CEP")]
             public string PostalCode { get; set; }
+            [Display(Name = "Telefone")]
             public string PhoneNumber { get; set; }
         }
 

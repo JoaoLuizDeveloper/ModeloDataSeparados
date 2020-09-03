@@ -50,7 +50,7 @@ namespace ProjetoTempus.Areas.Identity.Pages.Account
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Lembrar?")]
             public bool RememberMe { get; set; }
         }
 

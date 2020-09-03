@@ -16,6 +16,7 @@ using ProjetoTempus.AccessData.Data.Repository.IRepository;
 using ProjetoTempus.AccessData.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using ProjetoTempus.Utility;
+using ProjetoTempus.AccessData.Data.Initializer;
 
 namespace ProjetoTempus
 {
@@ -41,7 +42,7 @@ namespace ProjetoTempus
 
             services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            //services.AddScoped<IDbInitializer, DbInitializer>();
+            services.AddScoped<IDbInitializer, DbInitializer>();
 
             services.AddSession(options =>
             {
@@ -55,7 +56,7 @@ namespace ProjetoTempus
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInit)
         {
             if (env.IsDevelopment())
             {
@@ -72,7 +73,7 @@ namespace ProjetoTempus
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
-            //dbInit.Initialize();
+            dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
 

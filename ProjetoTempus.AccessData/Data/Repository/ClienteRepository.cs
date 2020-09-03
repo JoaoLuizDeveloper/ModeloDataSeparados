@@ -34,7 +34,7 @@ namespace ProjetoTempus.AccessData.Data.Repository
 
             obj.Nome = cliente.Nome;
             obj.CPF = cliente.CPF;
-            obj.DataNacimento = cliente.DataNacimento;
+            obj.DataNascimento = cliente.DataNascimento;
             obj.DataCadastro = cliente.DataCadastro;
             obj.RendaFamiliar = cliente.RendaFamiliar;
 

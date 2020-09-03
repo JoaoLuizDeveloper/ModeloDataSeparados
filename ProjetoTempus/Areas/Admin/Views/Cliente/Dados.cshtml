@@ -1,0 +1,107 @@
+﻿@using ProjetoTempus.Models
+@model List<Cliente>
+
+@{
+    ViewData["Title"] = "Dados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var status = @ViewBag.Filtro;
+
+    var dia = "text-primary";
+    var semana = "text-primary";
+    var mes = "text-primary";
+    var all = "text-primary";
+
+    if (status == 1)
+    {
+        dia = "active text-white";
+    }
+    else if (status == 2)
+    {
+        semana = "active text-white";
+    }
+    else if (status == 3)
+    {
+        mes = "active text-white";
+    }
+    else
+    {
+        all = "active text-white";
+    }
+}
+
+    
+        <div class="card">
+            <div class="card-header bg-dark text-light ml-0 row container">
+                <div class="col-12 d-none d-md-block col-md-6 pb-1">
+                </div>
+                <div class="col-12 col-md-4 offset-md-2 text-right">
+                    <a asp-action="Index" asp-controller="Cliente" asp-area="Admin" class="btn btn-outline-info form-control btn-sm">Voltar a Listagem</a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+                <div class="p-2">
+                    <h2 class="text-primary">Listagem dos Registros</h2>
+                </div>
+                <div class="p-2">
+                    <ul class="list-group list-group-horizontal-sm">
+                        <a style="text-decoration:none" asp-controller="Cliente" asp-route-filtro="1" asp-action="Dados">
+                            <li class="list-group-item @dia">Dia</li>
+                        </a>
+
+                        <a style="text-decoration:none" asp-controller="Cliente" asp-route-filtro="2" asp-action="Dados">
+                            <li class="list-group-item @semana">Semana</li>
+                        </a>
+
+                        <a style="text-decoration:none" asp-controller="Cliente" asp-route-filtro="3" asp-action="Dados">
+                            <li class="list-group-item @mes">Mês</li>
+                        </a>
+
+                        <a style="text-decoration:none" asp-controller="Cliente" asp-route-filtro="0" asp-action="Dados">
+                            <li class="list-group-item @all">All</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 pb-4">
+                            @if (Model != null)
+                            {
+                                <div class="panelred">
+                                    <div class="state-value">
+                                        <div class="value">
+                                            Total de @Model.Count
+                                            @{
+                                                if (status == 0)
+                                                {
+                                                    <span> encontrados em todos os Registros</span>
+                                                }
+                                                else if (status == 1)
+                                                {
+                                                    <span> Registros encontrados Hoje</span>
+                                                }
+                                                else if (status == 2)
+                                                {
+                                                    <span> Registros encontrados esta Semana</span>
+                                                }
+                                                else if (status == 3)
+                                                {
+                                                    <span> Registros encontrados nesse Mês</span>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+@*@section scripts{
+    <script src="~/js/dados.js"></script>
+}*@

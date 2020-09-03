@@ -2,13 +2,13 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Logar";
 }
 
 
 <div class="login-form pt-4">
     <form id="account" method="post">
-        <h2 class="text-center text-success"><b>Log In</b></h2>
+        <h2 class="text-center text-success"><b>Logar</b></h2>
 
         <div class="form-group">
             <input asp-for="Input.Email" placeholder="Email..." class="form-control" />
@@ -16,7 +16,7 @@
         </div>
 
         <div class="form-group">
-            <input asp-for="Input.Password" placeholder="Password..." class="form-control" />
+            <input asp-for="Input.Password" placeholder="Senha..." class="form-control" />
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
 
@@ -26,11 +26,11 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-block">Log in</button>
+            <button type="submit" class="btn btn-success btn-block">Logar</button>
         </div>
 
         <div class="text-center">
-            <a id="forgot-password" style="text-decoration:none;" asp-page="./ForgotPassword">Forgot your password?</a>
+            <a id="forgot-password" style="text-decoration:none;" asp-page="./ForgotPassword">Esqueceu a Senha?</a>
         </div>            
     </form>
 </div>

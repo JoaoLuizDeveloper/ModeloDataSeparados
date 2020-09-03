@@ -73,6 +73,9 @@ body {
 
 .search-background {
     background: url('/images/dust_scratches.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 .backgroundWhite {
@@ -107,4 +110,15 @@ body {
 .form-control, .btn {
     min-height: 38px;
     border-radius: 2px;
+}
+
+.panelred {
+    font-size: 40px;
+    background: #fc8675;
+    box-shadow: 0 5px 0 #e27869;
+    padding: 35px 20px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
 }

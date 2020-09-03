@@ -33,7 +33,7 @@ namespace ProjetoTempus.AccessData.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(maxLength: 150, nullable: false),
                     CPF = table.Column<string>(maxLength: 14, nullable: false),
-                    DataNacimento = table.Column<DateTime>(nullable: false),
+                    DataNascimento = table.Column<DateTime>(nullable: false),
                     DataCadastro = table.Column<DateTime>(nullable: false),
                     RendaFamiliar = table.Column<double>(nullable: false)
                 },

@@ -9,11 +9,11 @@
 <div class="border backgroundWhite" >
     <div class="row">
         <div class="col-6">
-            <h2 class="text-info">Employess List</h2>
+            <h2 class="text-info">Usuarios Listagem</h2>
         </div>
         <div class="col-6 text-right">
             <a asp-area="identity" asp-page="/Account/Register" class="btn btn-info">
-                <i class="fas fa-plus"></i> &nbsp; New Employee Registeration
+                <i class="fas fa-plus"></i> &nbsp; Novo Usuario
             </a>
         </div>
     </div>
@@ -32,7 +32,7 @@
                 <th>
                     @Html.DisplayNameFor(m=> m.PhoneNumber)
                 </th>
-                <th>Action</th>
+                <th>Ação</th>
             </tr>
             @foreach(var item in Model)
             {
@@ -63,6 +63,6 @@
     }
     else
     {
-        <p> No Users Founded</p>
+        <p> Não foram encontrados usuarios</p>
     }
 </div>
