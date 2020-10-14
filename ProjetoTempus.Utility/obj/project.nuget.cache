@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mF49Vazc9L4wDW60roRZNCIzRQ3uM1JvSYNNGIr2SHIJ0Z9c9v3szvuoLhF1vpiskAwmSPGrkTyVxLak1GGJAg==",
+  "dgSpecHash": "on50BSaDW/QgqwzZYXklbdOqGgJYfyeaxXR5OvsSLfDRy1a+yBGy+8ZsCZLK0D7Z3LK9dY/yIr2k3ytDTRmB7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj",
+  "projectFilePath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",

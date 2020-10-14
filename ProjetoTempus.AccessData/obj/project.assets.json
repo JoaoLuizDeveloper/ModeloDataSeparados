@@ -8408,11 +8408,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\ProjetoTempus.AccessData.csproj",
+      "projectUniqueName": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\ProjetoTempus.AccessData.csproj",
       "projectName": "ProjetoTempus.AccessData",
-      "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\ProjetoTempus.AccessData.csproj",
+      "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\ProjetoTempus.AccessData.csproj",
       "packagesPath": "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\obj\\",
+      "outputPath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.AccessData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JuninhoDRZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8428,11 +8428,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj": {
-              "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj"
+            "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj": {
+              "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj"
             },
-            "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj": {
-              "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj"
+            "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj": {
+              "projectPath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Utility\\ProjetoTempus.Utility.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "el+4aGOVhOym5uItxrB4R4IGVjgk+Tza3SZcYlIq4g05mih3RqtFjjorDTfMCb+bGNwKk8d+BrPXCUtS/RndfA==",
+  "dgSpecHash": "fzizH9zwVTqBynL8noFXLuDMmdEN3BTHe7/bcvLrgDKQ+Dq3r5GFce7G7ufIJU4UExHhwy8okW663SGXejjKlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuninhoDRZ\\source\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj",
+  "projectFilePath": "C:\\Users\\JuninhoDRZ\\source\\ProjectsToWork\\ProjetoTempus\\ProjetoTempus\\ProjetoTempus.Models\\ProjetoTempus.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
