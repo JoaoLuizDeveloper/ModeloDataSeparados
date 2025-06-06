@@ -14,20 +14,15 @@ ProjetoTempus.sln: Visual Studio solution file.
 
 🛠️ Technologies Used
 ASP.NET Core MVC
-
 Entity Framework Core
-
 C#
-
 HTML, CSS, JavaScript
 
 🚀 Getting Started
 Clone the repository:
 
-bash
-Copiar
-Editar
 git clone https://github.com/JoaoLuizDeveloper/ModeloDataSeparados.git
+<br />
 cd ModeloDataSeparados
 Open the solution:
 
@@ -39,17 +34,11 @@ Update the connection string in appsettings.json within the ProjetoTempus projec
 
 Apply migrations and update the database:
 
-bash
-Copiar
-Editar
 dotnet ef database update
 Run the application:
 
 Press F5 in Visual Studio or use the .NET CLI:
 
-bash
-Copiar
-Editar
 dotnet run --project ProjetoTempus
 The application will be available at http://localhost:5000.
 
